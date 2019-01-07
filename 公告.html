@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <title>TRPG-Dungeons & Goblin</title>
+    <link rel="icon" href="pic/smallkoba.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="pic/smallkoba.ico" type="image/x-icon" />
+    <meta charset="utf-8">
+    <style type="text/css">
+    #gameplay2:hover{
+        background-Color:rgb(78, 74, 74);     
+
+    }
+    #host2:hover{
+        background-Color:rgb(78, 74, 74);     
+
+    }
+    #gamer:hover{
+        background-Color:rgb(78, 74, 74);     
+
+    }
+
+    </style>
+    <script>
+        function hover(x){   
+        }
+        function not_hover(x){    
+        }
+
+        var count1=0,count2=0,count3=0,count4=0;
+        var tmp=0,tmp2=0,tmp3=0,tmp4=0,tmp5=0;
+
+        function opacity_a() {
+            tmp+=0.1;
+            var gp = document.getElementById("gameplay1");
+            var gp2 = document.getElementById("gameplay2");
+            gp.style="font-size:23px;color:rgba(255, 255, 255,"+ tmp +");"
+            gp2.style="font-size:30px;color:rgba(255, 255, 0,"+ tmp +");"
+        }
+
+        function opacity_b() {
+            tmp2+=0.1;
+            var host = document.getElementById("host");
+            var host2 = document.getElementById("host2");
+            var gamer = document.getElementById("gamer");
+            host.style="font-size:30px;color:rgba(255, 234, 234,"+ tmp2 +");";
+            host2.style="font-size:30px;color:rgba(255, 255, 0,"+ tmp2 +");";
+            gamer.style="font-size:30px;color:rgba(255, 255, 0,"+ tmp2 +");";
+        }
+        function opacity_c() {
+            tmp3+=0.1;
+            var host = document.getElementById("host3");
+            var host2 = document.getElementById("host4");
+            var host3 = document.getElementById("host5");
+            host.style="font-size:20px;color:rgba(255, 255, 255,"+ tmp3 +");";
+            host2.style="font-size:30px;color: rgba(184, 240, 184,"+ tmp3 +");";
+            host3.style = "font-size:20px;color:rgba(255, 255, 255,"+ tmp3 +");";
+        }
+        function opacity_d() {
+            tmp4+=0.1;
+            var gamer = document.getElementById("gamer2");
+            var gamer2 = document.getElementById("gamer3");
+            var gamer3 = document.getElementById("gamer4");
+            gamer.style="font-size:20px;color:rgba(255, 255, 255,"+ tmp4 +");";
+            gamer2.style="font-size:30px;color: rgba(184, 240, 184,"+ tmp4 +");";
+            gamer3.style = "font-size:20px;color:rgba(255, 255, 255,"+ tmp4 +");";
+        }
+
+        function opacity_e(){
+            tmp5+=0.1;
+            end.style = "font-size:35px;color: rgba(0, 0, 0," + tmp5 + ");text-align:center;"
+            end.style
+            
+        }
+
+        function first(){
+            if(count1==0){
+                var music = document.getElementById("book");
+                music.play();
+                var fisrt = document.getElementById("gameplay");
+                var gp = document.getElementById("gameplay1");
+                var gp2 = document.getElementById("gameplay2");
+                fisrt.style = "font-size:30px;color:yellow;";
+                gp.style="font-size:23px;color:rgba(255, 255, 255,0);";
+                gp2.style="font-size:30px;color:rgba(255, 255, 0,0);";
+                var up = window.setInterval("opacity_a()",100);
+                count1++;
+                }
+            }  
+                
+        function second(){
+            if(count2==0){
+                var music = document.getElementById("book");
+                music.play();        
+                var host = document.getElementById("host");
+                var host2 = document.getElementById("host2");
+                var gamer = document.getElementById("gamer");
+                host.style="font-size:30px;color:rgba(255, 234, 234,0);";
+                host2.style="font-size:30px;color:rgba(255, 255, 0,0);";
+                gamer.style="font-size:30px;color:rgba(255, 255, 0,0);";
+                var up = window.setInterval("opacity_b()",100);
+                count2++;
+            }
+        }
+        function third(){
+            if(count3==0){
+                var music = document.getElementById("book");
+                music.play();
+                var host = document.getElementById("host3");
+                var host2 = document.getElementById("host4");
+                var host3 = document.getElementById("host5");
+                host.style="font-size:20px;color:rgba(255, 255, 255,0);";
+                host2.style="font-size:30px;color: rgba(184, 240, 184,0);";
+                host3.style = "font-size:20px;color:rgba(255, 255, 255,0);";
+                var up = window.setInterval("opacity_c()",100);
+                count3++;
+            } 
+            if(count3==1&&count4==1){
+                var end = document.getElementById("end");
+                end.style = "font-size:35px;color: rgba(0, 0, 0,0);text-align:center;"
+                var up = window.setInterval("opacity_e()",100);
+            }
+        }
+        function forth(){
+            if(count4==0){
+                var music = document.getElementById("book");
+                music.play();
+                var gamer = document.getElementById("gamer2");
+                var gamer2 = document.getElementById("gamer3");
+                var gamer3 = document.getElementById("gamer4");
+                gamer.style="font-size:20px;color:rgba(255, 255, 255,0);";
+                gamer2.style="font-size:30px;color: rgba(184, 240, 184,0);";
+                gamer3.style = "font-size:20px;color:rgba(255, 255, 255,0);";
+                var up = window.setInterval("opacity_d()",100);
+                count4++;
+            }
+            if(count3==1&&count4==1){
+                var end = document.getElementById("end");
+                end.style = "font-size:35px;color: rgba(0, 0, 0,0);text-align:center;"
+                var up = window.setInterval("opacity_e()",100);
+            }
+        }
+        //<img src = "pic/魔物01.jpg" id = "pic" style="position: absolute;right:0%;bottom: 0%;width:35%;height:55%;">
+    </script>
+    <body>
+        <a href="index.html" style="position: absolute;right:2%;color:wheat;width: 6%;height:6%" id="return">返回主頁</a>
+        <div style="position:absolute;top: 0%;left:0%; width:100%; height:100%; z-index:-2;opacity:1;">
+                <img src="pic/asdf.png" height="100%" width="100%"/>
+        </div>   
+    <audio id="book" src="music/翻書.mp3"></audio>
+        <embed src="music/moon.mp3" autostart=true hidden=true>
+        <div style="border:3px #ccc solid;border-radius:10px;width:500px;height:500px;background-color:rgb(175, 175, 175);">
+        
+        <span id="gameplay" style="color: yellow; font-size: 30px;" onmouseover="this.style.backgroundColor='rgb(78, 74, 74)'" onmouseout="this.style.backgroundColor='rgb(175, 175, 175)'"  onclick="first()">
+                遊玩人數</span>
+                <span id="gameplay1" style="display: none;" >
+                    <br>
+                    　這類型的遊戲無法單人遊玩，請兩人以上遊玩</span>
+                    <br><br>
+                    
+                    <span id="gameplay2" style="display: none;"onmouseover="this.style.backgroundColor='rgb(78, 74, 74)'" onmouseout="this.style.backgroundColor='rgb(175, 175, 175)'"  onclick="second()">
+                        需要</span>
+                        <br>
+                            <span id="host" style="display: none;" >　　主持人*1 玩家1人以上</span>
+                            <br><br>
+                            
+                            <span id="host2" style="display: none;"  onmouseover="this.style.backgroundColor='rgb(78, 74, 74)'" onmouseout="this.style.backgroundColor='rgb(175, 175, 175)'" onclick="third()">
+                                主持人須知</span>
+                                <br>               
+                                <span id="host3" style="display: none;" >　需先上網研讀準備劇本，準備越完備的</span>
+                                <span id="host4" style="display:none">劇本</span>
+                                <span id="host5" style="display: none;">越能讓玩家深入其境 </span>
+                                <br><br>           
+                            <span id="gamer" style="display: none;" onmouseover="this.style.backgroundColor='rgb(78, 74, 74)'" onmouseout="this.style.backgroundColor='rgb(175, 175, 175)'" onclick="forth()">
+                                玩家須知</span>
+                                <br>
+                                <span id="gamer2" style="display: none;" >　認真玩遊戲就是對主持人最大的</span>
+                                <span id="gamer3" style="display:none">尊重</span>
+                                <span id="gamer4" style="display: none;">，好好扮演自己所創造出來的角色 </span>
+                <p id="end" style="display: none;">
+                    遊玩愉快
+                    謝謝你們光顧:D</p>
+
+            </div>
+                            
+    </body>
+    
+    </head>
+</html>
