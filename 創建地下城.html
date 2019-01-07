@@ -2,7 +2,7 @@
 
 <html>
     <head>
-    <title>TRPG-Dungeons & Goblin</title>
+    <title>TRPG-Dungeons & Goblin 地下城</title>
     <link rel="icon" href="pic/smallkoba.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="pic/smallkoba.ico" type="image/x-icon" />
     <meta charset="utf-8">
@@ -115,7 +115,7 @@
                                 if(content.value.substring(10,)>100 || content.value.substring(10,)<1)
                                     show.innerHTML+="無效的指令<br>";
                                 else{
-                                    show.innerHTML+="123骰出了"+ dice_one +"("+content.value.substring(10,)+")-->";//+ dice_one>=content.value.substring(10,)+"<br>";
+                                    show.innerHTML+="骰出了"+ dice_one +"("+content.value.substring(10,)+")-->";//+ dice_one>=content.value.substring(10,)+"<br>";
                                     show.innerHTML+= dice_one<=content.value.substring(10,);
                                     show.innerHTML+= "<br>";
                                 }
@@ -124,7 +124,7 @@
                                 if(content.value.substring(9,)>20 || content.value.substring(9,)<1)
                                     show.innerHTML+="無效的指令<br>";
                                 else{
-                                    show.innerHTML+="123骰出了"+ dice_two +"("+content.value.substring(9,)+")-->";
+                                    show.innerHTML+="骰出了"+ dice_two +"("+content.value.substring(9,)+")-->";
                                     show.innerHTML+= dice_two>=content.value.substring(9,);
                                     show.innerHTML+= "<br>";
                                 }
@@ -136,7 +136,7 @@
                                 if(content.value.substring(9,)>100 || content.value.substring(9,) < 1)
                                     show.innerHTML+="無效的指令<br>";
                                 else{
-                                    show.innerHTML+="123骰出了"+ dice_one +"("+content.value.substring(9,)+")-->";//+ dice_one>=content.value.substring(10,)+"<br>";
+                                    show.innerHTML+="骰出了"+ dice_one +"("+content.value.substring(9,)+")-->";//+ dice_one>=content.value.substring(10,)+"<br>";
                                     show.innerHTML+= dice_one<=content.value.substring(9,);
                                     show.innerHTML+= "<br>";
                                 }   
@@ -145,7 +145,7 @@
                                 if(content.value.substring(8,)>20 || content.value.substring(8,) < 1)
                                     show.innerHTML+="無效的指令<br>";
                                 else{
-                                    show.innerHTML+="123骰出了"+ dice_two +"("+content.value.substring(8,)+")-->";
+                                    show.innerHTML+="骰出了"+ dice_two +"("+content.value.substring(8,)+")-->";
                                     show.innerHTML+= dice_two>=content.value.substring(8,);
                                     show.innerHTML+= "<br>";
                                 }
@@ -1101,7 +1101,6 @@
                 <img src="pic/玩家二.png"width="80" height="80"onclick="showChar2()">
                 <img src="pic/玩家三.png" width="80" height="80"onclick="showChar3()">
                 <img src="pic/玩家四.png" width="80" height="80"onclick="showChar4()">
-                <a href="指令.html"><img src="pic/令.png" id="instructio"   width="80"height="80"></a>
             </div>
             <input type="button" style="position: absolute;right:21.5%;font-size:25px"  id="role" value="角色" onclick="createChar()">
             <div id="display">
